@@ -7,6 +7,7 @@ use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
 use Illuminate\Support\Facades\Log;
+use Illuminate\Support\Facades\Mail;
 
 class LeadController extends Controller
 {
@@ -21,22 +22,32 @@ class LeadController extends Controller
 
         $lead = Lead::create($data + ['ip' => $request->ip()]);
 
-        $this->notify($lead);
+        // уведомления уходят уже после ответа, форма их не ждёт
+        defer(fn () => $this->notify($lead));
 
         return response()->json(['ok' => true]);
     }
 
-    // Уведомление в Telegram. Если не дошло — заявка всё равно лежит в базе
+    // Уведомления на почту и в Telegram. Если не дошло — заявка всё равно лежит в базе
     private function notify(Lead $lead): void
     {
+        $wa = 'https://wa.me/'.preg_replace('/\D/', '', $lead->phone);
+        $text = "Заявка с padelkz.kz\nИмя: {$lead->name}\nКлуб: {$lead->club}\nТелефон: {$lead->phone}\nWhatsApp: {$wa}";
+
+        if ($email = config('landing.notify.email')) {
+            try {
+                Mail::raw($text, fn ($m) => $m->to($email)->subject("Заявка на демо: {$lead->name}"));
+            } catch (\Throwable $e) {
+                Log::warning('Заявка #'.$lead->id.' не ушла на почту: '.$e->getMessage());
+            }
+        }
+
         $token = config('landing.notify.bot_token');
         $chat = config('landing.notify.chat_id');
 
         if (! $token || ! $chat) {
             return;
         }
-
-        $text = "Заявка с padelkz.kz\nИмя: {$lead->name}\nКлуб: {$lead->club}\nТелефон: {$lead->phone}";
 
         try {
             Http::timeout(5)->post("https://api.telegram.org/bot{$token}/sendMessage", [

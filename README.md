@@ -27,9 +27,16 @@ Laravel 12. Одна страница (`/`) и приём заявок с фор
 |---|---|
 | `LANDING_WHATSAPP` | номер для WhatsApp, только цифры: `77001234567` |
 | `LANDING_TELEGRAM` | ник без @, появится кнопка «Написать в Telegram» |
+| `LEAD_NOTIFY_EMAIL` | почта, куда приходят заявки |
+| `MAIL_*` | через что слать письма (Gmail SMTP), заполняет `./mail-setup.sh` |
 | `LEAD_TELEGRAM_BOT_TOKEN`, `LEAD_TELEGRAM_CHAT_ID` | бот, который пришлёт заявку в чат |
 
 После правки `.env` на сервере: `php artisan config:cache`.
+
+Письма о заявках: у сервера нет обратной DNS-записи, напрямую Gmail его письма не примет, поэтому шлём через
+SMTP Gmail. На сервере `./mail-setup.sh` спросит адрес Gmail и пароль приложения
+(myaccount.google.com/apppasswords), пропишет их в `.env` и отправит тестовое письмо.
+Проверить ещё раз: `php artisan lead:mail-test`.
 
 Посмотреть заявки: `php artisan tinker --execute 'dump(App\Models\Lead::latest()->get()->toArray())'`.
 
