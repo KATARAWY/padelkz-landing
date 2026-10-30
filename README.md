@@ -10,6 +10,10 @@ Laravel 12. Одна страница (`/`) и приём заявок с фор
 - `app/Http/Controllers/LeadController.php` — приём заявки: проверка полей, запись в таблицу `leads`,
   уведомление в Telegram, если задан бот.
 - `config/landing.php` — куда идут заявки, значения берутся из `.env`.
+- SEO: разметка JSON-LD (организация, CRM, приложение, FAQ) в `<head>` страницы; `public/robots.txt`
+  открывает сайт поисковикам и AI-ботам (ChatGPT, Perplexity, Claude, Gemini, Яндекс), `public/sitemap.xml`,
+  `public/llms.txt` — описание продукта для нейросетей. Поменялся текст на странице — поправь `llms.txt`
+  и FAQ в JSON-LD, иначе нейронки будут пересказывать старое. `public/c176d0….txt` — ключ IndexNow.
 
 ## Заявки
 

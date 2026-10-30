@@ -1,2 +1,31 @@
+# Padel KZ — CRM для падел-клубов в Казахстане.
+# Поисковикам и AI-ассистентам доступ открыт. Кратко о сайте для LLM: https://padelkz.kz/llms.txt
+
 User-agent: *
-Disallow:
+Allow: /
+Disallow: /lead
+
+# AI-поиск и ассистенты: ChatGPT, Perplexity, Claude, Gemini, Apple, Яндекс Нейро и другие
+User-agent: GPTBot
+User-agent: OAI-SearchBot
+User-agent: ChatGPT-User
+User-agent: PerplexityBot
+User-agent: Perplexity-User
+User-agent: ClaudeBot
+User-agent: Claude-SearchBot
+User-agent: Claude-User
+User-agent: Google-Extended
+User-agent: Applebot
+User-agent: Applebot-Extended
+User-agent: YandexBot
+User-agent: YandexAdditional
+User-agent: Bingbot
+User-agent: DuckAssistBot
+User-agent: meta-externalagent
+User-agent: Amazonbot
+User-agent: MistralAI-User
+User-agent: CCBot
+Allow: /
+Disallow: /lead
+
+Sitemap: https://padelkz.kz/sitemap.xml

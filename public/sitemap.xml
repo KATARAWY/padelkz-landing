@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://padelkz.kz/</loc>
+    <lastmod>2026-10-30</lastmod>
+    <image:image><image:loc>https://padelkz.kz/img/og.jpg</image:loc></image:image>
+    <image:image><image:loc>https://padelkz.kz/img/schedule.webp</image:loc></image:image>
+    <image:image><image:loc>https://padelkz.kz/img/booking.webp</image:loc></image:image>
+    <image:image><image:loc>https://padelkz.kz/img/kassa.webp</image:loc></image:image>
+    <image:image><image:loc>https://padelkz.kz/img/group.webp</image:loc></image:image>
+    <image:image><image:loc>https://padelkz.kz/img/tour.webp</image:loc></image:image>
+    <image:image><image:loc>https://padelkz.kz/img/reports.webp</image:loc></image:image>
+    <image:image><image:loc>https://padelkz.kz/img/client.webp</image:loc></image:image>
+    <image:image><image:loc>https://padelkz.kz/img/app_home.webp</image:loc></image:image>
+  </url>
+</urlset>

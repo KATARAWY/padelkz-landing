@@ -4,18 +4,149 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <script>document.documentElement.classList.add("js")</script>
-<title>Padel KZ — CRM для падел-клуба</title>
-<meta name="description" content="Сетка кортов, касса с Kaspi, тренеры, абонементы и турниры в одной CRM. Бронь из приложения Padel KZ сразу попадает в сетку администратора.">
+<title>Padel KZ — CRM для падел-клуба в Казахстане</title>
+<meta name="description" content="CRM для падел-клуба: сетка кортов, касса с терминалом Kaspi, тренеры, абонементы, турниры и отчёты. Бронь из приложения Padel KZ сразу попадает в сетку администратора.">
+<meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#0C110F">
 <link rel="canonical" href="https://padelkz.kz/">
 <meta property="og:type" content="website">
+<meta property="og:site_name" content="Padel KZ">
+<meta property="og:locale" content="ru_RU">
 <meta property="og:url" content="https://padelkz.kz/">
 <meta property="og:title" content="Padel KZ — CRM для падел-клуба">
 <meta property="og:description" content="Корты, касса, тренеры, абонементы и турниры клуба в одной системе.">
 <meta property="og:image" content="https://padelkz.kz/img/og.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Padel KZ — CRM для падел-клуба">
 <meta name="twitter:card" content="summary_large_image">
+<link rel="sitemap" type="application/xml" href="https://padelkz.kz/sitemap.xml">
+<script type="application/ld+json">
+{
+  "@@context": "https://schema.org",
+  "@@graph": [
+    {
+      "@@type": "Organization",
+      "@@id": "https://padelkz.kz/#org",
+      "name": "Padel KZ",
+      "url": "https://padelkz.kz/",
+      "logo": "https://padelkz.kz/img/apple-touch-icon.png",
+      "description": "Padel KZ — CRM для падел-клубов и приложение для игроков в Казахстане.",
+      "areaServed": {"@@type": "Country", "name": "Казахстан"},
+      "sameAs": [
+        "https://apps.apple.com/app/padel-kz/id6759392401",
+        "https://play.google.com/store/apps/details?id=com.padelkz.app"
+      ]
+    },
+    {
+      "@@type": "WebSite",
+      "@@id": "https://padelkz.kz/#website",
+      "url": "https://padelkz.kz/",
+      "name": "Padel KZ",
+      "inLanguage": "ru",
+      "publisher": {"@@id": "https://padelkz.kz/#org"}
+    },
+    {
+      "@@type": "WebPage",
+      "@@id": "https://padelkz.kz/#webpage",
+      "url": "https://padelkz.kz/",
+      "name": "Padel KZ — CRM для падел-клуба в Казахстане",
+      "description": "CRM для падел-клуба: сетка кортов, касса с терминалом Kaspi, тренеры, абонементы, турниры и отчёты. Бронь из приложения Padel KZ сразу попадает в сетку администратора.",
+      "inLanguage": "ru",
+      "isPartOf": {"@@id": "https://padelkz.kz/#website"},
+      "about": {"@@id": "https://padelkz.kz/#crm"},
+      "primaryImageOfPage": {"@@type": "ImageObject", "url": "https://padelkz.kz/img/og.jpg", "width": 1200, "height": 630}
+    },
+    {
+      "@@type": "SoftwareApplication",
+      "@@id": "https://padelkz.kz/#crm",
+      "name": "Padel KZ CRM",
+      "url": "https://padelkz.kz/",
+      "applicationCategory": "BusinessApplication",
+      "applicationSubCategory": "CRM для падел-клубов",
+      "operatingSystem": "Web",
+      "inLanguage": "ru",
+      "description": "CRM для падел-клуба: сетка кортов, касса с терминалом Kaspi, тренеры, группы и абонементы, турниры, клубные карты, база клиентов с WhatsApp и отчёты владельцу. Брони из приложения Padel KZ сразу появляются в сетке администратора.",
+      "provider": {"@@id": "https://padelkz.kz/#org"},
+      "areaServed": {"@@type": "Country", "name": "Казахстан"},
+      "audience": {"@@type": "BusinessAudience", "audienceType": "Владельцы и администраторы падел-клубов"},
+      "screenshot": [
+        "https://padelkz.kz/img/schedule.webp",
+        "https://padelkz.kz/img/booking.webp",
+        "https://padelkz.kz/img/kassa.webp",
+        "https://padelkz.kz/img/tour.webp",
+        "https://padelkz.kz/img/reports.webp"
+      ],
+      "featureList": [
+        "Сетка кортов по часам и по дням, цена зависит от часа",
+        "Бронь из приложения Padel KZ сразу появляется в сетке",
+        "Касса с терминалом Kaspi: оплаты, возвраты, чек в WhatsApp",
+        "Способы оплаты: наличные, карта, Kaspi (терминал, QR и счёт), ссылка на оплату картой, клубные карты, сертификаты, депозит и кешбэк",
+        "Тренеры: рабочие часы, ставки, доля тренера в брони",
+        "Группы и абонементы с остатком занятий у каждого участника",
+        "Турниры: американо, мексикано, лесенка, флекс, группы с сеткой плей-офф, рейтинг игроков",
+        "Лиги с общим зачётом",
+        "Клубные карты и сертификаты с остатком и списанием при брони",
+        "Карточка клиента с историей визитов и оплат, загрузка базы из Excel, поиск дубликатов",
+        "WhatsApp клуба внутри CRM",
+        "Списки для обзвона новичков и пропавших клиентов",
+        "Чек-листы открытия и закрытия смены",
+        "Журнал действий с автором и временем",
+        "Отчёты: выручка, брони, загрузка кортов, средний чек, выгрузка в Excel и PDF",
+        "Инвентарь: аренда ракеток, продажа воды и мячей в брони",
+        "Доступы владельца, администраторов и менеджеров",
+        "API для внешних систем учёта",
+        "Резервные копии на сервере в Казахстане"
+      ]
+    },
+    {
+      "@@type": "MobileApplication",
+      "@@id": "https://padelkz.kz/#app",
+      "name": "Padel KZ",
+      "operatingSystem": "iOS, Android",
+      "applicationCategory": "SportsApplication",
+      "inLanguage": "ru",
+      "description": "Приложение для игроков в падел: выбор клуба, корта и времени, цена до брони, онлайн-оплата, турниры по уровню, рейтинг, клубные карты и сертификаты.",
+      "publisher": {"@@id": "https://padelkz.kz/#org"},
+      "offers": {"@@type": "Offer", "price": "0", "priceCurrency": "KZT"},
+      "installUrl": [
+        "https://apps.apple.com/app/padel-kz/id6759392401",
+        "https://play.google.com/store/apps/details?id=com.padelkz.app"
+      ],
+      "sameAs": [
+        "https://apps.apple.com/app/padel-kz/id6759392401",
+        "https://play.google.com/store/apps/details?id=com.padelkz.app"
+      ]
+    },
+    {
+      "@@type": "FAQPage",
+      "@@id": "https://padelkz.kz/#faq",
+      "mainEntity": [
+        {
+          "@@type": "Question",
+          "name": "Игрокам обязательно ставить приложение?",
+          "acceptedAnswer": {"@@type": "Answer", "text": "Нет. Администратор создаёт бронь по имени и телефону. Игроки с приложением бронируют корты и записываются на турниры сами."}
+        },
+        {
+          "@@type": "Question",
+          "name": "Какие оплаты принимает касса?",
+          "acceptedAnswer": {"@@type": "Answer", "text": "Наличные, карта, Kaspi (терминал, QR и счёт), ссылка на оплату картой, клубные карты, сертификаты, депозит и кешбэк. Способ оплаты виден на каждой брони."}
+        },
+        {
+          "@@type": "Question",
+          "name": "Можно перенести нашу базу клиентов?",
+          "acceptedAnswer": {"@@type": "Answer", "text": "Да, клиентов можно загрузить из Excel. Повторяющиеся записи помогает найти раздел «Дубликаты»."}
+        },
+        {
+          "@@type": "Question",
+          "name": "Где хранятся данные клуба?",
+          "acceptedAnswer": {"@@type": "Answer", "text": "Резервные копии делаются на сервер в Казахстане. Отчёты выгружаются в Excel и PDF, для своих систем есть API."}
+        }
+      ]
+    }
+  ]
+}
+</script>
 <link rel="icon" href="favicon.ico" sizes="any">
 <link rel="icon" href="img/mark.svg" type="image/svg+xml">
 <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
