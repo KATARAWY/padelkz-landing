@@ -8,6 +8,7 @@
 <meta name="description" content="CRM для падел-клуба: сетка кортов, касса с терминалом Kaspi, тренеры, абонементы, турниры и отчёты. Бронь из приложения Padel KZ сразу попадает в сетку администратора.">
 <meta name="robots" content="index, follow, max-image-preview:large, max-snippet:-1">
 <meta name="theme-color" content="#0C110F">
+<meta name="google-site-verification" content="FeWvR4Hk1E4Rxj4cBLXRDUV2gW8tkEyVk_C6fO1-A88" />
 <link rel="canonical" href="https://padelkz.kz/">
 <meta property="og:type" content="website">
 <meta property="og:site_name" content="Padel KZ">
