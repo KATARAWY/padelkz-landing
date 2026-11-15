@@ -723,8 +723,8 @@ html.js .court.in .post{opacity:1}
 <section class="sec" id="app">
   <div class="wrap app-grid">
     <div class="phones" aria-hidden="true">
-      <div class="phone"><img src="img/app_home.webp" width="720" height="1216" loading="lazy" decoding="async" alt=""></div>
-      <div class="phone"><img src="img/app_slots.webp" width="720" height="1216" loading="lazy" decoding="async" alt=""></div>
+      <div class="phone"><img src="img/app_home.webp" width="720" height="1216" loading="lazy" decoding="async"alt="Главный экран приложения Padel KZ: лиги, клубы, тренировки, клубные карты, сертификаты и создание турнира"></div>
+      <div class="phone"><img src="img/app_slots.webp" width="720" height="1216" loading="lazy" decoding="async"alt="Бронь корта в приложении Padel KZ: выбор дня и корта, свободные часы с ценой и занятые слоты"></div>
     </div>
     <div>
       <h2 class="h2">Игроки бронируют сами</h2>
