@@ -5,6 +5,7 @@
 - Сайт: https://padelkz.kz/
 - Страна: Казахстан, валюта: тенге (₸)
 - Записаться на демо: https://padelkz.kz/#demo
+- Статьи о работе падел-клуба: https://padelkz.kz/blog (полные тексты: https://padelkz.kz/llms-full.txt)
 - Приложение в App Store: https://apps.apple.com/app/padel-kz/id6759392401
 - Приложение в Google Play: https://play.google.com/store/apps/details?id=com.padelkz.app
 

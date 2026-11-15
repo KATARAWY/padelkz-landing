@@ -4,6 +4,7 @@
 User-agent: *
 Allow: /
 Disallow: /lead
+Disallow: /tg/
 
 # AI-поиск и ассистенты: ChatGPT, Perplexity, Claude, Gemini, Apple, Яндекс Нейро и другие
 User-agent: GPTBot
@@ -27,5 +28,6 @@ User-agent: MistralAI-User
 User-agent: CCBot
 Allow: /
 Disallow: /lead
+Disallow: /tg/
 
 Sitemap: https://padelkz.kz/sitemap.xml

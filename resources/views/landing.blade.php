@@ -541,6 +541,7 @@ html.js .court.in .post{opacity:1}
       <a href="#clients">Клиенты</a>
       <a href="#app">Приложение</a>
       <a href="#start">Подключение</a>
+      <a href="/blog">Статьи</a>
     </nav>
     <a class="btn btn-primary btn-sm" href="#demo">Записаться на демо</a>
   </div>
@@ -887,6 +888,7 @@ html.js .court.in .post{opacity:1}
   <div class="wrap">
     <img src="img/logo-white.svg" alt="Padel KZ" width="97" height="26">
     <nav aria-label="Ссылки">
+      <a href="/blog">Статьи</a>
       <a href="https://apps.apple.com/app/padel-kz/id6759392401" target="_blank" rel="noopener">App Store</a>
       <a href="https://play.google.com/store/apps/details?id=com.padelkz.app" target="_blank" rel="noopener">Google Play</a>
       <a href="#demo">Демо CRM</a>
