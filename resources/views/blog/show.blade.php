@@ -53,7 +53,7 @@
       <b>В статье</b>
       <ol>
         @foreach ($article['toc'] as $h)
-          <li><a href="#{{ $h['id'] }}">{{ $h['text'] }}</a></li>
+          <li><a href="#{{ $h['id'] }}">{!! \App\Support\Typo::text(e($h['text'])) !!}</a></li>
         @endforeach
       </ol>
     </aside>
@@ -65,7 +65,7 @@
         <summary>Содержание</summary>
         <ol>
           @foreach ($article['toc'] as $h)
-            <li><a href="#{{ $h['id'] }}">{{ $h['text'] }}</a></li>
+            <li><a href="#{{ $h['id'] }}">{!! \App\Support\Typo::text(e($h['text'])) !!}</a></li>
           @endforeach
         </ol>
       </details>
