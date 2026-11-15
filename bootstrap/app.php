@@ -11,8 +11,8 @@ return Application::configure(basePath: dirname(__DIR__))
         health: '/up',
     )
     ->withMiddleware(function (Middleware $middleware): void {
-        // Форма лендинга шлёт JSON без CSRF-токена (страница статичная)
-        $middleware->validateCsrfTokens(except: ['lead']);
+        // Форма лендинга шлёт JSON без CSRF-токена (страница статичная), вебхук Telegram — тоже
+        $middleware->validateCsrfTokens(except: ['lead', 'tg/hook']);
     })
     ->withExceptions(function (Exceptions $exceptions): void {
         //

@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Lead;
+use App\Models\LeadChat;
 use Illuminate\Http\JsonResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Http;
@@ -43,19 +44,25 @@ class LeadController extends Controller
         }
 
         $token = config('landing.notify.bot_token');
-        $chat = config('landing.notify.chat_id');
-
-        if (! $token || ! $chat) {
+        if (! $token) {
             return;
         }
 
-        try {
-            Http::timeout(5)->post("https://api.telegram.org/bot{$token}/sendMessage", [
-                'chat_id' => $chat,
-                'text' => $text,
-            ])->throw();
-        } catch (\Throwable $e) {
-            Log::warning('Заявка #'.$lead->id.' не ушла в Telegram: '.$e->getMessage());
+        $chats = collect(explode(',', (string) config('landing.notify.chat_id')))
+            ->map(fn ($c) => trim($c))
+            ->filter()
+            ->merge(LeadChat::pluck('chat_id'))
+            ->unique();
+
+        foreach ($chats as $chat) {
+            try {
+                Http::timeout(5)->post("https://api.telegram.org/bot{$token}/sendMessage", [
+                    'chat_id' => $chat,
+                    'text' => $text,
+                ])->throw();
+            } catch (\Throwable $e) {
+                Log::warning('Заявка #'.$lead->id.' не ушла в Telegram '.$chat.': '.$e->getMessage());
+            }
         }
     }
 }

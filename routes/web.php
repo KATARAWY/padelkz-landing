@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\LeadController;
+use App\Http\Controllers\TelegramController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -16,3 +17,5 @@ Route::get('/', function () {
 Route::post('/lead', [LeadController::class, 'store'])
     ->middleware('throttle:5,1')
     ->name('lead');
+
+Route::post('/tg/hook', [TelegramController::class, 'hook'])->name('tg.hook');
