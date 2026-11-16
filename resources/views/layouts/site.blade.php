@@ -56,5 +56,7 @@
     <span>© {{ date('Y') }} Padel KZ</span>
   </div>
 </footer>
+<script>/* телефон: внешние ссылки в той же вкладке — встроенные браузеры Telegram и Instagram молча глотают target=_blank */
+if (matchMedia("(pointer: coarse)").matches) document.querySelectorAll('a[target="_blank"]').forEach(a => a.removeAttribute("target"));</script>
 </body>
 </html>

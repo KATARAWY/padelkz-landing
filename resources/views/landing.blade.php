@@ -907,6 +907,8 @@ html.js .court.in .post{opacity:1}
    endpoint — адрес, куда отправить заявку POST-запросом JSON {name, club, phone, page}.
               Если указан, заявка уходит туда, а WhatsApp не открывается. */
 const CONFIG = @json($config);
+/* телефон: внешние ссылки открываем в той же вкладке — встроенные браузеры Telegram и Instagram молча глотают target=_blank */
+const TOUCH = matchMedia("(pointer: coarse)").matches;
 
 const reduce = matchMedia("(prefers-reduced-motion: reduce)").matches;
 const $$ = (s, root = document) => [...root.querySelectorAll(s)];
@@ -1131,9 +1133,12 @@ if (CONFIG.endpoint) document.getElementById("formNote").textContent = "Отве
       } catch (e) { /* не получилось — уходим в WhatsApp, чтобы заявка не потерялась */ }
     }
     const text = `Здравствуйте! Хочу посмотреть CRM Padel KZ.\nИмя: ${data.name}\nКлуб: ${data.club}\nТелефон: ${data.phone}`;
-    window.open(`https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`, "_blank", "noopener");
+    const wa = `https://wa.me/${CONFIG.whatsapp}?text=${encodeURIComponent(text)}`;
+    if (TOUCH) location.href = wa; else window.open(wa, "_blank", "noopener");
   });
 })();
+
+if (TOUCH) document.querySelectorAll('a[target="_blank"]').forEach(a => a.removeAttribute("target"));
 </script>
 </body>
 </html>
